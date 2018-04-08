@@ -1,9 +1,4 @@
 
-/*
- *    Copyright (c) The League of Amazing Programmers 2013-2017
- *    Level 0
- */
-
 import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -12,21 +7,25 @@ import javax.swing.JOptionPane;
 
 public class Code4Life {
 	public static void main(String[] args) {
-String TC= JOptionPane.showInputDialog("How many hours did you spend coding this week?");
-{
-	
-}
+		String TC = JOptionPane.showInputDialog("How many hours did you spend coding this week?");
+		int TC1 = Integer.parseInt(TC);
+		if (TC1 == 3) {
+			JOptionPane.showMessageDialog(null, "You're a code ninja.");
+		}
+		if (TC1 == 4) {
+			JOptionPane.showMessageDialog(null, "You're a code ninja.");
+		}
+		if (TC1 <= 2) {
+			JOptionPane.showMessageDialog(null, "Stop watching YouTube, and write some code instead.");
+		}
+		if (TC1 >= 5) {
+			playBatmanTheme();
+		}
 	}
-	/*
-	 * Ask the user how many hours they spent coding this week.
-	 * 
-	 * 1. If it's 3 or more, tell them they're a Code Ninja.
-	 * 
-	 * 2. If it's less than 2, tell them to stop watching YouTube and write code
-	 * instead.
-	 * 
-	 * 3. If it's more than 5, play the Batman theme song.
-	 */
+
+	{
+
+	}
 
 	private static void playBatmanTheme() {
 		try {
