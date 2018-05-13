@@ -62,7 +62,7 @@ String city = JOptionPane.showInputDialog("What city do you live in?");
 
 
 // If they answered "San Diego", tell them they live in Americ's Finest City
-if(city  ("San Diego")) {
+//if(city  ("San Diego")) {
 	
 } else {
 	JOptionPane.showMessageDialog(null, "You should move to San Diego.");
